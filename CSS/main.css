@@ -165,7 +165,8 @@ nav .navbar-top {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background: transparent;
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -181,6 +182,7 @@ nav .navbar-top {
   
   .dropdown-content a:hover {
       background-color: #ddd;
+      /* background: transparent; */
       color: black;
       font-size: medium;
   }
@@ -352,7 +354,8 @@ nav .navbar-top {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background:#616161;
+    /* background:#616161;*/
+    background: transparent;
 }
 
 .stopScrolling {
