@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+    
+    .item-hide{
+        display: none;
+
+    }
+    .navbar-top{
+        max-width: 100%;
+    }
+    #carouselExampleIndicators{
+        max-width:100%;
+    }
+  }
+  
