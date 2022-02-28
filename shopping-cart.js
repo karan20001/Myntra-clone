@@ -5,7 +5,7 @@ if(!productsInCart){
 const parentElement = document.querySelector('#buyItems');
 const cartSumPrice = document.querySelector('#sum-prices');
 const products = document.querySelectorAll('.product-under');
-
+const TotalSum = document.querySelector('#total-sum');
 
 const countTheSumPrice = function () { // 4
 	let sum = 0;
@@ -36,12 +36,14 @@ const updateShoppingCartHTML = function () {  // 3
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
 		cartSumPrice.innerHTML = '$' + countTheSumPrice();
+		TotalSum.innerHTML='$' + countTheSumPrice();
 
 	}
 	else {
 		document.querySelector('.checkout').classList.add('hidden');
 		parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
 		cartSumPrice.innerHTML = '';
+		TotalSum.innerHTML='';
 	}
 }
 
